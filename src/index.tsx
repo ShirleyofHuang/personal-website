@@ -2,14 +2,23 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import LandingPage from './pages/LandingPage';
 import reportWebVitals from './reportWebVitals';
+import Navbar from './components/Navbar';
+import Projects from './pages/ProjectsPage';
+import WorkPage from './pages/WorkPage';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
+    <Navbar />
     <App />
+    <LandingPage />
+    <WorkPage />
+    <Projects />
   </React.StrictMode>
 );
 

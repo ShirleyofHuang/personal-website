@@ -1,0 +1,37 @@
+.ProjectCard-Container {
+    border-radius: 100px;
+}
+
+.ProjectCard-Card {
+    border-radius: 50px;
+}
+
+.ProjectCard-Image {
+    width: 100%;
+    height: 410px;
+    align-self: 'center';
+    border-radius: 15;
+    transition: transform .2s;
+}
+
+.ProjectCard-Image:hover {
+    transform: scale(1.5);
+    filter: inherit !important;
+    filter: brightness(30%)
+}
+
+.ProjectCard-Overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #F58D4E;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.ProjectCard-Overlay:hover {
+    opacity: 1;
+    background-color: rgba(0,0,0,.65);
+}

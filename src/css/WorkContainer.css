@@ -1,0 +1,10 @@
+.WorkContainer-Card {
+    flex-direction: row !important;
+    width: 40rem;
+    margin: 2rem;
+}
+
+.WorkContainer-Picture {
+    width: 50%;
+    height: 320px;
+}

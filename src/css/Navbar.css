@@ -1,7 +1,35 @@
 .Navbar-Container {
-    background-color: #FEDECE;
+    /* background-color: #EEEEEE; */
+    background-color: transparent;
+    /* display: flex; */
+    /* justify-content: right; */
+    /* align-items: flex-end; */
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 30px;
+    animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+}
+
+
+.Navbar-Container a {
+        color: #6C6C6C !important;
+        text-decoration: none !important;
+        margin-left: 1rem;
+      
+}
+.Navbar-Container a:hover {
+        color: #6C6C6C !important;
+        text-decoration: underline !important;
+      
+      }
+
+.NavBar-Socials {
     display: flex;
-    justify-content: right;
-    align-items: flex-end;
-    padding: 50px;
+    justify-content: start;
+}
+
+.NavBar-Directory {
+    display: flex;
+    justify-content: end;
 }

@@ -2,9 +2,41 @@
     flex-direction: row !important;
     width: 40rem;
     margin: 2rem;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 .WorkContainer-Picture {
     width: 50%;
     height: 320px;
+    margin: 1rem;
 }
+
+.WorkContainer-Container { 
+    /* border-style: none none none dotted;
+    border-color: #F58D4E;
+    border-width: 5px; */
+    text-align: left;
+    align-items: flex-start;
+}
+
+.WorkContainer-Row {
+    width: 100%;
+}
+
+.WorkContainer-title {
+    color: #212529;
+}
+
+/* .WorkContainer-Col {
+    display: flex;
+    text-align: end;
+} */
+
+.WorkContainer-date {
+    text-align: end;
+}
+
+.WorkContainer-Text {
+    margin-top: 20px;
+}
+

@@ -5,8 +5,9 @@ import Col from 'react-bootstrap/Col';
 import CardGroup from 'react-bootstrap/CardGroup';
 import ProjectCard from "../components/Project";
 import { ProjectInfo } from "../types/ProjectType";
+import Header from "../components/Header";
 // import LinkedinIcon from '../assets/svg/linkedin.svg'
-import '../css/Navbar.css';
+import '../css/ProjectsPage.css';
 
 const cards = [
     {
@@ -25,24 +26,24 @@ const cards = [
     {
         title: "Personal Website", 
         technologies: ["React Typescript", "HTML", ],
-        logo: "qrency.png", 
+        logo: "shirley_huang.png", 
         description: "My personal website you're currently on :)", 
         link: ""},
     {
         title: "QRency",
-        technologies: [], 
+        technologies: ["React", "Django", "HTML/CSS"], 
         logo: "qrency.png",
         description: "ATM Hackathon project that won 1st place",
         link: ""},
     {
         title: "Java Game",
-        technologies: [],
+        technologies: ["Java", "MVP", "NoSQL"],
         logo: "bossforest.png",
         description: "Android game made using Java", 
         link: ""},
     {
         title: "Simon Says", 
-        technologies: [], 
+        technologies: ["Verilog"], 
         logo: "qrency.png",
         description: "Verilog game", 
         link: ""}
@@ -50,21 +51,24 @@ const cards = [
 
 const ProjectsPage = () => {
     return (
-        <Container className="ProjectsPage-Container">
-            <h1>past projects</h1>
-            <CardGroup>
-                {cards.map((project: ProjectInfo) => {
-                    return <Col xs={4}><ProjectCard 
-                    title={project.title}
-                    technologies={project.technologies}
-                    description={project.description}
-                    link={project.link}
-                    logo={project.logo}
-                     />
-                     </Col>
-                })}
-            </CardGroup>
-        </Container>
+        <div>
+            <Header text="03. selected projects" />
+            <Container className="ProjectsPage-Container">
+                <CardGroup>
+                    {cards.map((project: ProjectInfo) => {
+                        return <Col xs={4}><ProjectCard 
+                        title={project.title}
+                        technologies={project.technologies}
+                        description={project.description}
+                        link={project.link}
+                        logo={project.logo}
+                        />
+                        </Col>
+                    })}
+                </CardGroup>
+            </Container>
+        </div>
+
     )
 }
 

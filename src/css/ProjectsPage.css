@@ -1,0 +1,9 @@
+.ProjectsPage-Container {
+    text-align: left;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+.ProjectsPage-Row {
+    padding-left: 1rem;
+}

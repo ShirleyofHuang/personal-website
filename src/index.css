@@ -7,6 +7,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.background {
+  background-color: #EEEEEE;
+}
+
 h1 {
   font-family: 'Playfair Display';
   /* src: local('PlayfairDisplay'), url(../fonts/PlayfairDisplay-VariableFont_wght.ttf) format('truetype'); */
@@ -16,6 +20,10 @@ h1 {
 h2 {
   font-family: "Playfair Display";
   /* src: local('LatoBoldItalic'), url(../fonts/Lato-Black.ttf) format('truetype'); */
+}
+
+h3 {
+  color: #6C6C6C;
 }
 
 .col {
@@ -33,6 +41,14 @@ p {
   color: #6C6C6C;
 }
 
+a {
+  color: white !important; 
+}
+
+a:hover {
+  color: #6C6C6C;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -41,24 +57,27 @@ p {
 }
 
 .buttons {
-  background-color: #B0CCC0 !important;
-  border-color: #B0CCC0 !important;
+  background-color: #6C6C6C !important;
+  border-color: #6C6C6C !important;
   text-transform: uppercase;
   font-family: "Playfair Display";
+  color: white !important;
+  margin-top: 20px;
 }
 
 .buttons:hover {
   background-color: transparent !important;
-  border-color: #B0CCC0 !important;
-  color: #B0CCC0 !important;
+  border-color: #6C6C6C !important;
+  color: #6C6C6C !important;
 }
 
 .links {
-  color: white;
+  color: white !important;
   text-decoration: none;
   font-family: "Lato"
 }
 
 .links:hover {
-  color: #B0CCC0 !important;
+  color: #6C6C6C !important;
 }
+

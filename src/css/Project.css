@@ -1,23 +1,33 @@
 .ProjectCard-Container {
     border-radius: 100px;
+    padding: 20px;
 }
 
 .ProjectCard-Card {
     border-radius: 50px;
+    margin: 1rem;
 }
 
 .ProjectCard-Image {
     width: 100%;
     height: 410px;
     align-self: 'center';
-    border-radius: 15;
+    /* border-radius: 10px; */
     transition: transform .2s;
+    -webkit-filter: grayscale(70%); 
+    /* filter: grayscale(10%);  */
+    /* opacity: 0.5; */
+}
+
+.ProjectCard-Mute {
+    /* background: rgb(78, 158, 237); */
+    position: relative;
 }
 
 .ProjectCard-Image:hover {
-    transform: scale(1.5);
+    /* transform: scale(1.5);
     filter: inherit !important;
-    filter: brightness(30%)
+    filter: brightness(30%) */
 }
 
 .ProjectCard-Overlay {
@@ -26,12 +36,20 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #F58D4E;
+    color: black;
     opacity: 0;
-    transition: .5s ease;
+    margin: 20px;
+    /* transition: .5s ease; */
+    background: 
+    linear-gradient(#EEEEEE 0 0) no-repeat
+    var(--p, 200%) 100% / 200% var(--p, .08em);
+    transition: .3s var(--t, 0s), background-position .3s calc(.3s - var(--t, 0s));
 }
 
 .ProjectCard-Overlay:hover {
     opacity: 1;
-    background-color: rgba(0,0,0,.65);
+    /* background-color: rgba(0,0,0,.65); */
+    --p: 100%;
+    --t: .3s;
+  
 }

@@ -1,0 +1,21 @@
+.Parallax-container-body {
+    /* height: 400px; */
+   }
+   
+.bg-container {
+    position: relative;
+    /* width: 70% !important; */
+    height: 400px;
+    margin: auto;
+    /* margin-top: 55%; */
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
+.bg-container h1 {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+    font-size: 70px;
+}

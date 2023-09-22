@@ -12,7 +12,9 @@ const ProjectCard = ({title, description, technologies, link, logo} : ProjectInf
     return (
         <div className="ProjectCard-Container">
             <Card className="ProjectCard-Card">
+                <div className="ProjectCard-Mute">
                 <Card.Img className="ProjectCard-Image" variant="top" src={require(`../assets/${logo}`)} />
+                </div>
                 <Card.ImgOverlay className="ProjectCard-Overlay">
                     <h1>{title}</h1>
                     <h2>{description}</h2>
@@ -20,7 +22,7 @@ const ProjectCard = ({title, description, technologies, link, logo} : ProjectInf
                         {technologies.join(" | ")}
                     </Row>
                     <Button className="buttons">
-                            <a className="links" href={link}>
+                            <a className="links" rel="noopener noreferrer" href={link} target="_blank">
                                 see github
                             </a>
                     </Button>

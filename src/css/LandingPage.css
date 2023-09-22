@@ -1,21 +1,35 @@
 .LandingPage-App {
     min-height: 90vh;
+    min-width: 50vh;
     /* display: flex; */
-    align-items: center;
-    justify-content: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     justify-content: center;
 }
 
-.LandingPage {
-    background: linear-gradient(180deg, rgba(254,222,206,1) 0%, rgba(254,222,206,1) 25%, rgba(255,255,255,1) 50%);
+.LandingPage-Card {
+    flex-direction: row !important;
+    background-color: #EEEEEE !important;
+    justify-content: center !important;
 }
+
+.LandingPage-Picture {
+    width: 50%;
+    height: 420px;
+    /* background: linear-gradient(180deg, rgba(254,222,206,1) 0%, rgba(254,222,206,1) 25%, rgba(255,255,255,1) 50%); */
+}
+
 
 .LandingPage-Row {
     display: flex;
     align-items: center;
+}
+
+.LandingPage-Body {
+    margin-left: 4rem;
+    padding-left: 4rem !important;
+    border-style: none none none solid;
 }
 
 .card.LandingPage-Card {
@@ -24,7 +38,7 @@
     margin: 50px;
     padding: 50px;
     justify-content: center;
-    text-align: center;
+    text-align: left;
     font-size: 30px;
     border: none;
 }

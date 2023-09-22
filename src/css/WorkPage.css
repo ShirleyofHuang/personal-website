@@ -1,0 +1,22 @@
+.WorkPage-Container {
+    /* background-color: #EBF3EE; */
+    margin-top: 50px;
+    /* min-height: 90vh; */
+}
+
+.WorkPage-Carousel {
+    width: 80%;
+    height: 500px
+}
+
+.container-body {
+    height: 3500px;
+  }
+  .spinner {
+    width: 40%;
+    height: 140px;
+    /* background-color: cornflowerblue; */
+    margin: auto;
+    margin-top: 30%;
+    margin-bottom: 30%;
+  }

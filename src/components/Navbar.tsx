@@ -1,15 +1,33 @@
-import React from "react"
+import React, { useState, useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Link } from "react-router-dom";
+import CSS from 'csstype';
 // import LinkedinIcon from '../assets/svg/linkedin.svg'
 import '../css/Navbar.css';
 
 
 const Navbar = () => {
+
+    const [navColor, setnavColor] = useState("transparent");
+    const [navSize, setnavSize] = useState("10rem");
+
+    const isHome = true;
+
+    const listenScrollEvent = () => {
+        window.scrollY > 10 ? setnavColor("rgba(52, 52, 52, 0.4)") : setnavColor("transparent");
+        window.scrollY > 10 ? setnavSize("6rem") : setnavSize("10rem");
+      };
+      useEffect(() => {
+        window.addEventListener("scroll", listenScrollEvent);
+        return () => {
+          window.removeEventListener("scroll", listenScrollEvent);
+        };
+      }, []);
+
     return (
-        <div className="Navbar-Container">
+        <div className="Navbar-Container" style={{backgroundColor: navColor, height: navSize, transition: "all 1s", color: "white"}}>
             <Row>
                 <Col xs={6} className="NavBar-Socials">
                     <Link to="https://www.linkedin.com/in/yunqing-shirley-huang/">
@@ -34,5 +52,11 @@ const Navbar = () => {
         </div>
     )
 }
+
+const NavbarStyles: CSS.Properties = {
+    backgroundColor: 'rgba(52, 52, 52, 0.8)'
+}
+
+
 
 export default Navbar

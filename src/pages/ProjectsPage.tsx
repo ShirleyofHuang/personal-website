@@ -34,19 +34,19 @@ const cards = [
         technologies: ["React", "Django", "HTML/CSS"], 
         logo: "qrency.png",
         description: "ATM Hackathon project that won 1st place",
-        link: ""},
+        link: "https://github.com/ShirleyofHuang/QRency"},
     {
         title: "Java Game",
         technologies: ["Java", "MVP", "NoSQL"],
         logo: "bossforest.png",
         description: "Android game made using Java", 
-        link: ""},
+        link: "https://github.com/g0569/g0569"},
     {
         title: "Simon Says", 
         technologies: ["Verilog"], 
-        logo: "qrency.png",
+        logo: "simonsays.jpeg",
         description: "Verilog game", 
-        link: ""}
+        link: "https://github.com/ShirleyofHuang/FPGA_SimonSays"}
 ]
 
 const ProjectsPage = () => {

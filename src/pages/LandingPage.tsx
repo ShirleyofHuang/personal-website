@@ -14,7 +14,7 @@ function LandingPage() {
         <div className='LandingPage'>
             <Header text="01. about" />
         <Container className='LandingPage-App'>
-            {/* <Fade delay={0}> */}
+            <Fade delay={0}>
         <Card className="LandingPage-Card">
                 <Card.Img className="LandingPage-Picture" variant="bot" src={require(`../assets/IMG_4727.jpeg`)} />
                 <Card.Body className="LandingPage-Body">
@@ -32,7 +32,7 @@ function LandingPage() {
                     </Button>
                 </Card.Body>
             </Card>
-            {/* </Fade> */}
+            </Fade>
         </Container>
         </div>
     )

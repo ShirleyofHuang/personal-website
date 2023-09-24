@@ -13,7 +13,7 @@ const HomePage = () => {
     <LandingPage />
     <WorkPage />
     <ProjectsPage />
-    <Parallex image="IMG_4727.jpeg" title="travels"/>
+    {/* <Parallex image="IMG_4727.jpeg" title="travels"/> */}
     </>
     )
 }

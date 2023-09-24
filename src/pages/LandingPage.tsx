@@ -25,11 +25,7 @@ function LandingPage() {
                     I'm a new grad from the University of Toronto with experience in cloud, full stack, and android development. 
         I have experience in building features end to end in early start ups to big corporations, and love working with people, code, and everything in between.
                     </Card.Text>
-                    <Button className="buttons">
-                        <a className="link" href="https://docs.google.com/document/d/1Gpak5AE4VqKmAzvoWtLt0QjBKX2eOfzj/edit?usp=sharing&ouid=102558947000491739964&rtpof=true&sd=true">
-                            Get Resume
-                        </a>
-                    </Button>
+                    <Button className="buttons" onClick={() => window.open("https://docs.google.com/document/d/1Gpak5AE4VqKmAzvoWtLt0QjBKX2eOfzj/edit?usp=sharing&ouid=102558947000491739964&rtpof=true&sd=true", '_blank')}>Get Resume</Button>
                 </Card.Body>
             </Card>
             </Fade>

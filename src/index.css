@@ -43,6 +43,7 @@ p {
 
 a {
   color: white !important; 
+  text-decoration: none;
 }
 
 a:hover {
@@ -73,7 +74,7 @@ a:hover {
 
 .links {
   color: white !important;
-  text-decoration: none;
+  text-decoration: none !important;
   font-family: "Lato"
 }
 

@@ -21,11 +21,7 @@ const ProjectCard = ({title, description, technologies, link, logo} : ProjectInf
                     <Row>
                         {technologies.join(" | ")}
                     </Row>
-                    <Button className="buttons">
-                            <a className="links" rel="noopener noreferrer" href={link} target="_blank">
-                                see github
-                            </a>
-                    </Button>
+                    <Button className="buttons" onClick={() => window.open(link, '_blank')}>see github</Button>
                 </Card.ImgOverlay>
             </Card>
         </div>

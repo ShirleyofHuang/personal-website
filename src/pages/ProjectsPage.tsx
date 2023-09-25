@@ -56,7 +56,7 @@ const ProjectsPage = () => {
             <Container className="ProjectsPage-Container">
                 <CardGroup>
                     {cards.map((project: ProjectInfo) => {
-                        return <Col xs={4}><ProjectCard 
+                        return <Col xs={12} md={4}><ProjectCard 
                         title={project.title}
                         technologies={project.technologies}
                         description={project.description}

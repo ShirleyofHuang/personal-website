@@ -5,6 +5,7 @@ import WorkPage from "./WorkPage"
 import ProjectsPage from "./ProjectsPage"
 import Parallex from "../components/Parallex"
 import TravelPage from "./TravelPage"
+import ContactPage from "./Contact"
 import { Fade } from "react-awesome-reveal";
 
 const HomePage = () => {
@@ -17,6 +18,7 @@ const HomePage = () => {
     <Fade duration={2000}>
         <ProjectsPage />
     </Fade>
+    <ContactPage />
     {/* <Parallex image="IMG_4727.jpeg" title="travels"/> */}
     </>
     )

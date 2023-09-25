@@ -1,7 +1,7 @@
 # Shirley Huang's Personal Website
 
 This project was created with React Typescript.
-Available at `shirleyhuang.com` hosted with Github Pages.
+Available at [shirleyhuang.com](https://shirleyhuang.com) hosted with Github Pages.
 
 ## Available Scripts
 

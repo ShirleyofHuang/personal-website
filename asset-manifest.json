@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.cad9a9f7.css",
-    "main.js": "/static/js/main.b6ed1857.js",
+    "main.js": "/static/js/main.7ba7458e.js",
     "static/js/787.91e82d4e.chunk.js": "/static/js/787.91e82d4e.chunk.js",
     "static/media/IMG_4727.jpeg": "/static/media/IMG_4727.fd3d6441a8c887bed1dd.jpeg",
     "static/media/sk1.jpeg": "/static/media/sk1.85db4020779456531df1.jpeg",
     "static/media/thailand4.jpeg": "/static/media/thailand4.eaa18488475b271d1b2a.jpeg",
+    "static/media/profile.jpeg": "/static/media/profile.e5c031b4a53221a7644c.jpeg",
     "static/media/singapore3.jpeg": "/static/media/singapore3.28e6d2425578d9ca29ac.jpeg",
     "static/media/thailand6.jpeg": "/static/media/thailand6.0e20bd1fc38807f8b128.jpeg",
     "static/media/thailand3.jpeg": "/static/media/thailand3.b14cfaecc80ddb027ee7.jpeg",
@@ -33,11 +34,11 @@
     "static/media/linkedin.svg": "/static/media/linkedin.d4db79967d4a46a6455fc8b129a1debf.svg",
     "index.html": "/index.html",
     "main.cad9a9f7.css.map": "/static/css/main.cad9a9f7.css.map",
-    "main.b6ed1857.js.map": "/static/js/main.b6ed1857.js.map",
+    "main.7ba7458e.js.map": "/static/js/main.7ba7458e.js.map",
     "787.91e82d4e.chunk.js.map": "/static/js/787.91e82d4e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cad9a9f7.css",
-    "static/js/main.b6ed1857.js"
+    "static/js/main.7ba7458e.js"
   ]
 }

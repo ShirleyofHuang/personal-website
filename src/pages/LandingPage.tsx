@@ -14,7 +14,7 @@ function LandingPage() {
         <div className='LandingPage'>
             <Header text="01. about" />
         <Container className='LandingPage-App'>
-            <Fade delay={0}>
+            <Fade delay={0} duration={2000}>
         <Card className="LandingPage-Card">
                 <Card.Img className="LandingPage-Picture" variant="bot" src={require(`../assets/profile.jpeg`)} />
                 <Card.Body className="LandingPage-Body">

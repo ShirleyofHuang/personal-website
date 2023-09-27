@@ -14,41 +14,37 @@ const work_experience = [
         company: "General Motors",
         work_title: "Android Software Engineer",
         dates: "Sept - Dec 2022",
-        technologies: ["Kotlin", "Jenkins"],
-        description: "I was part of the Radio team for the GM's infotainment system (dashboard on the car). I mainly worked on setting up the CI/CD on Jenkins to run unit tests automatically with every push. I had the infotainment hardware and it made me feel so cool. ",
+        technologies: ["Kotlin", "Jenkins", "JUnit"],
+        description: "I was on the radio team working on the infotainment system for all GM brand cars. I mainly worked on debugging defects that affected real customers as well as set up the CI/CD pipeline on Jenkins to run unit tests automatically for the team with each push.",
         logo: "gm.webp"
     },
     {
         company: "Mark43",
         work_title: "Full Stack Software Engineer",
         dates: "June - Aug 2022",
-        technologies: ["Kotlin", "Jenkins"],
-        description: "Mark43 is a NYC based company focused in the public safety sector. Joined the Rebel Compliance team where I worked on setting up the Warrants dashboard, creating a new timeline page for police officers to use to track warrants.",
+        technologies: ["Java", "MySQL", "Typescript", "React"],
+        description: "Mark43 is a NYC based cloud company focused in the public safety sector. I joined the Rebel Compliance team where I worked on setting up the Warrants dashboard, creating a new timeline page for police officers to use to track warrants. I worked on this feature end to end where it is now deployed to 5 police agencies with over 1000 users.",
         logo: "m43.jpeg"
     },
     {
         company: "State Street",
         work_title: "Cloud Software Engineer",
         dates: "May - Dec 2021",
-        technologies: ["Kotlin", "Jenkins"],
-        description: "I worked on the cloud infrastructure of the company and learnt a lot about AWS mainly. I spent most of my time writing python lambdas and integrating in AWS's systems such as IAMs, Cloudwatch, and SNS.",
+        technologies: ["AWS", "Python", "Cloudwatch", "Cloudformation"],
+        description: "I worked on the cloud infrastructure of the company and learnt a lot about AWS. I spent most of my time writing python lambdas and integrating in AWS's APIs such as IAMs, Cloudwatch, and SNS.",
         logo: "statestreet.jpeg"
     },
     {
-        company: "Tudu Toronto",
+        company: "Todo Toronto",
         work_title: "Full Stack Software Developer",
-        technologies: ["Kotlin", "Jenkins"],
+        technologies: ["React", "Node.JS", "MySQL"],
         dates: "May - Aug 2020",
-        description: "Tudu Toronto is no longer active but this was my first internship and where I learnt full stack development. I was creating any and all features end to end including OAuths, Billing features, and Photo uploading.",
+        description: "Todo Toronto is no longer active but this was my first internship and where I learnt full stack development. I was creating any and all features end to end including OAuths, Billing features, and Photo uploading.",
         logo: "tudu.jpeg"
     },
 ]
 const WorkPage = () => {
     const [index, setIndex] = useState(0);
-
-    // const parallax = useParallax({
-    //     rotate: [0, 360],
-    //   });
 
     const out = useParallax({
         scaleX: [1.5, 0, "easeInQuad"],
@@ -66,10 +62,8 @@ const WorkPage = () => {
         scaleX: [1.5, 0, "easeInQuad"],
     })
 
-    const handleSelect = (selectedIndex: number) => {
-      setIndex(selectedIndex);
-    };
     return (
+        // TODO: Refactor this so it's not hardnoded
 
         <div>
              <Header text="02. work experience" />
@@ -117,30 +111,6 @@ const WorkPage = () => {
             </div>
              </Container>
         </div>
-
-        // <div className="WorkPage">
-        //     <Header text="02. work experience" />
-        // <Container className="WorkPage-Container">
-        //     <CardGroup>
-        //         {work_experience.map((work: WorkInfo) => {
-        //             return <Col xs={12}>
-        //             <WorkContainer
-        //                 company={work.company}
-        //                 dates={work.dates}
-        //                 work_title={work.work_title}
-        //                 technologies={work.technologies}
-        //                 description={work.description}
-        //                 logo={work.logo}
-        //                 />
-        //             </Col>
-        //         })}
-        //     </CardGroup>
-        //     <Row>
-        //         <Col>
-        //         </Col>
-        //     </Row>
-        // </Container>
-        // </div>
     )
 }
 

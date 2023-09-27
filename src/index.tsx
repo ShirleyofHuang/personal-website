@@ -19,6 +19,7 @@ import { ParallaxProvider } from "react-scroll-parallax";
 
 
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import ScrollToTop from './components/ScrollToTop';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -29,6 +30,7 @@ root.render(
     <div className="background">
     <BrowserRouter>
     <Navbar />
+    <ScrollToTop />
 
     <Routes>
       <Route path="/travels" element={<TravelPage />} />

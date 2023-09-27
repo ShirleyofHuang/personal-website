@@ -19,7 +19,6 @@ const countries = [
     {
         country: "Thailand",
         cities: ["Bangkok", "Chiang Mai", "Koh Tao", "Koh Samui", "Khao Sok", "Ao Nang"], 
-        // pictures: ["thailand1.jpeg"]
         pictures: ["thailand1.jpeg", "thailand2.jpeg", "thailand3.jpeg", "thailand4.jpeg", "thailand5.jpeg", "thailand6.jpeg"]
     }, 
     {
@@ -29,12 +28,12 @@ const countries = [
     }, 
     {
         country: "Indonesia",
-        cities: ["Bali", "Ubud"], 
-        pictures: ["bali1.jpeg", "bali2.jpeg"]
+        cities: ["Ubud", "Tegalalang", "Canggu"], 
+        pictures: ["bali1.jpeg", "bali2.jpeg", "bali3.jpg"]
     }, 
     {
         country: "South Korea",
-        cities: ["Seoul", "Incheon", "Myeongdong"], 
+        cities: ["Seoul", "Incheon", "Myeongdong", "Bukchon Hanok"], 
         pictures: ["sk1.jpeg", "sk2.jpeg", "sk3.jpeg"]
     }, 
 ]

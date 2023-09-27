@@ -11,18 +11,6 @@ import '../css/WorkContainer.css';
 const WorkContainer = ({company, work_title, technologies, dates, description, logo}: WorkInfo) => {
     return (
         <Container className="WorkContainer-Container">
-            {/* <Card className="WorkContainer-Card">
-                <Card.Img className="WorkContainer-Picture" variant="bot" src={require(`../assets/${logo}`)} />
-                <Card.Body>
-                    <Card.Title>{company}</Card.Title>
-                    <Card.Subtitle>
-                    <span>{work_title} <br /> {dates} </span>
-                    </Card.Subtitle>
-                    <Card.Text className="WorkContainer-Text">
-                        {description}
-                    </Card.Text>
-                </Card.Body>
-            </Card> */}
             <Row className="WorkContainer-Row">
                 <Col xs={9}>
                     <h1 className="WorkContainer-title">{company}</h1>
